@@ -20,10 +20,6 @@
         padding: 10%;
     }
 
-    .steps-box { margin-top: 10px }
-    .steps-box:last-child { margin-top: 10px }
-    .works-step { margin-bottom: 40px; }
-    .works-step:last-child { margin-bottom: 60px; }
     .app-screen { width: 50%; }
 
     .icon-small { 
@@ -66,19 +62,8 @@
         margin-left: 0%;
     }
 
-    .works-step div {
-        height: 40px;
-        width: 40px;
-        margin-right: 15px;
-        padding: 4px;
-        font-size: 120%;
-    }
-
     .app-screen { width: 40%;}
-    .steps-box:first-child { text-align: center; }   
     
-    .works-step { margin-bottom: 20px; }
-    .works-step:last-child { margin-bottom: 20px; }
 }
 
 /*Small phones 0 - 480*/

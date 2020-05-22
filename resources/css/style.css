@@ -104,14 +104,6 @@ h2:after {
     margin-top: 30px;
 }
 
-/*---------- PARAGRAPHS -------------*/
-.long-copy {
-    line-height: 145%;
-    width: 75%;
-    margin-left: 15%;
-    padding: 10%;
-}
-
 .box p {
     font-size: 90%;
     line-height: 145%;
@@ -281,19 +273,8 @@ header {
 .sticky .logo-black { display: block; }
 
 /*-----------------------------------*/
-/*FEATURES*/
-/*-----------------------------------*/
-.section-features .long-copy {
-    margin-bottom: 30px;
-}
-
-/*-----------------------------------*/
 /*MEALS*/
 /*-----------------------------------*/
-
-.section-meals {
-    padding: 0;
-}
 
 .meals-showcase {
     list-style: none;
@@ -306,71 +287,11 @@ header {
      width: 25%;
 }
 
-.meal-photo {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-.meal-photo img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transform: scale(1.15);
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-.meal-photo img:hover {
-    opacity: 1;
-    transform: scale(1.03);
-}
-
 /*-----------------------------------*/
 /*HOW IT WORKS*/
 /*-----------------------------------*/
-
-.steps-box {
-}
-
-.section-steps {
-    background-color: #f4f4f4;
-}
-
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-}
-
-.steps-box:last-child {
-    padding-left: 3%;
-    margin-top: 70px;
-}
-
 .app-screen {
     width: 40%;
-}
-
-.works-step {
-    margin-bottom: 50px;
-}
-
-.works-step:last-of-type {
-    margin-bottom: 80px;
-}
-
-.works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
-    height: 50px;
-    width: 55px;
-    text-align: center; 
-    padding: 5px;
-    float: left;
-    font-size: 150%;
-    margin-right: 25px;
 }
 
 .btn-app:link,
@@ -404,13 +325,6 @@ header {
 /*-----------------------------------*/
 /*TESTIMONIALS*/
 /*-----------------------------------*/
-
-.section-testimonials {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(img/back-customers.jpg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-}
 
 blockquote {
     padding: 2%;
