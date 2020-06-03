@@ -308,11 +308,15 @@ header {
 /*-----------------------------------*/
 /*CITIES*/
 /*-----------------------------------*/
-.box img {
-    cursor: pointer;
+.box img,
+.about img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+.box img {
+    cursor: pointer;
 }
 
 .item-feature {
