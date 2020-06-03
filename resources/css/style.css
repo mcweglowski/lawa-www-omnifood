@@ -418,6 +418,10 @@ cite img {
     margin: 0 auto;
 }
 
+.contact-item {
+    margin: 10px 0 10px 0;
+}
+
 input[type=text], 
 input[type=email], 
 select, 
@@ -438,6 +442,17 @@ input[type=checkbox] {
 
 *:focus {
     outline: none;
+}
+
+.phone {
+    font-size: 120%;
+}
+
+.phone img {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
 /*-----------------------------------*/
