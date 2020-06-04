@@ -74,7 +74,7 @@ $(document).ready(function() {
   var currentGalleryID = '';
 
   $('.js--lightbox-open-gallery').click(function() {
-      currentGalleryID = $(this).attr('destination');
+      currentGalleryID = $(this).attr('data-destination');
       $(currentGalleryID).css("display", "block");
       slideIndex = 1;
       showSlide(slideIndex);
@@ -91,7 +91,7 @@ $(document).ready(function() {
   })
 
   $('.js--lightbox-image-show').click(function() {
-      var id = $(this).attr('slideNo');
+      var id = $(this).attr('data-slideno');
       slideIndex = id;
       showSlide(id);
   })
