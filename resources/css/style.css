@@ -1,6 +1,5 @@
 /*
 Orange color: #e67e22
-Theme color: #091C29
 */
 
 
@@ -55,7 +54,7 @@ section {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #091C29;
+    color: #e67e22;
     font-size: 120%;
     margin-right: 5px;
     /*tricks to align text and icons*/
@@ -98,7 +97,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #26455a;
+    background-color: #e67e22;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -115,17 +114,17 @@ h2:after {
 ion-icon {
     font-size: 350%;
     display: block;
-    color: #091C29;
+    color: #e67e22;
     margin-bottom: 10px;
   }
 
 /*------- GENERIC LINKS -------------*/
 a:link,
 a:visited {
-    color: #091C29;
+    color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #091C29;
+    border-bottom: 1px solid #e67e22;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -152,34 +151,34 @@ a:active {
 .btn-full:link,
 .btn-full:visited
 ,input[type=submit] {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    color: #000000;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid #e67e22;
+    color: #e67e22;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #091C29;
+    background-color: #cf6d17;
 }
 
 .btn-full:hover,
 .btn-full:active,
 input[type=submit] {
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid #cf6d17;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
+    border: 1px solid #cf6d17;
     color: #fff;
 }
 
@@ -246,7 +245,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #e67e22;
 }
 
 /*-----------------------------------*/
@@ -309,11 +308,15 @@ header {
 /*-----------------------------------*/
 /*CITIES*/
 /*-----------------------------------*/
-.box img {
-    cursor: pointer;
+.box img,
+.about img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+.box img {
+    cursor: pointer;
 }
 
 .item-feature {
@@ -419,6 +422,10 @@ cite img {
     margin: 0 auto;
 }
 
+.contact-item {
+    margin: 10px 0 10px 0;
+}
+
 input[type=text], 
 input[type=email], 
 select, 
@@ -439,6 +446,17 @@ input[type=checkbox] {
 
 *:focus {
     outline: none;
+}
+
+.phone {
+    font-size: 120%;
+}
+
+.phone img {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
 /*-----------------------------------*/
@@ -539,4 +557,111 @@ footer p {
 .js--wp-2.animated,
 .js--wp-3.animated {
     opacity: 1;
+}
+
+
+/* Lightbox */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  .lightbox-close-icon {
+      color: #ffffff;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 250%;
+      font-weight: bold;
+  }
+
+  .lightbox-close-icon:hover,
+  .lightbox-close-icon:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .lightbox-modal-content {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 100%;
+      height: 100%;
+  }
+
+/*https://www.w3schools.com/css/css_align.asp*/
+.lightbox-slide {
+    position: relative;
+
+    margin: auto;
+    /* border: 1px solid green; */
+    padding: 10px;
+    height: 75%;
+    width: 90%;
+}
+  
+.lightbox-slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lightbox-prev-slide,
+.lightbox-next-slide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 100%;
+    transition: 0.6s ease;
+    border-radius: 0 3px 0 3px;
+    user-select: none;/*obsolete property*/
+    -webkit-user-select: none;
+    /* border: 1px solid green; */
+}
+
+.lightbox-next-slide {
+    right: 0;
+    border-radius: 3px 0 3px 0;
+}
+
+.lightbox-prev-slide:hover,
+.lightbox-next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* https://css-tricks.com/centering-css-complete-guide/ */
+
+.lightbox-miniatures-panel {
+    /* border: 1px solid green; */
+    margin-top: 30px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.lightbox-miniature {
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.lightbox-miniature img {
+    max-height: 100px;
 }
