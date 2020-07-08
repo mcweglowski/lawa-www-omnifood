@@ -665,3 +665,9 @@ footer p {
 .lightbox-miniature img {
     max-height: 100px;
 }
+
+.long-copy {
+    text-align: justify;
+    line-height: 145%;
+    padding: 5%;
+}
