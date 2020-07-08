@@ -319,6 +319,15 @@ header {
     cursor: pointer;
 }
 
+.box ul {
+    margin-bottom: 15px;
+}
+
+.box li {
+    text-align: left;
+    padding-right: 10%;
+}
+
 .item-feature {
     margin-bottom: 5px;
     line-height: 130%;
