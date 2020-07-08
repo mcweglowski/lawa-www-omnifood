@@ -321,6 +321,12 @@ header {
 
 .item-feature {
     margin-bottom: 5px;
+    line-height: 130%;
+    text-align: justify;
+}
+
+.item-feature p {
+    margin-bottom: 5px;
 }
 
 /*-----------------------------------*/
