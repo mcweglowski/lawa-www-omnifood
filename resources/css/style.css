@@ -312,6 +312,13 @@ header {
     cursor: pointer;
 }
 
+.box-1-of-1 img {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .box ul {
     margin-bottom: 15px;
 }
