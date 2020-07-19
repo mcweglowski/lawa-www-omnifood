@@ -5,6 +5,22 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $('.js--section-sprzet-wojskowy').offset().top}, 1000)
   });
 
+  $('.js--scroll-to-obuwie-ochronne').click(function() {
+    $('html, body').animate({scrollTop: $('.js--section-obuwie-ochronne').offset().top}, 1000)
+  });
+
+  $('.js--scroll-to-helmy-strazackie').click(function() {
+    $('html, body').animate({scrollTop: $('.js--section-helmy-strazackie').offset().top}, 1000)
+  });
+
+  $('.js--scroll-to-kombinezony-ochronne').click(function() {
+    $('html, body').animate({scrollTop: $('.js--section-kombinezony-ochronne').offset().top}, 1000)
+  });
+
+  $('.js--scroll-to-srodki-chronne').click(function() {
+    $('html, body').animate({scrollTop: $('.js--section-srodki-ochronne').offset().top}, 1000)
+  });
+
   /* Smooth scrolling */
   // Select all links with hashes
   $('a[href*="#"]')
