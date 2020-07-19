@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   /* Scroll on buttons*/
-  $('.js--scroll-to-plans').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-oferta').offset().top}, 1000)
+  $('.js--scroll-to-sprzet-wojskowy').click(function() {
+    $('html, body').animate({scrollTop: $('.js--section-sprzet-wojskowy').offset().top}, 1000)
   });
 
   /* Smooth scrolling */
