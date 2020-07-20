@@ -6,21 +6,26 @@ $(document).ready(function() {
   });
 
   $('.js--scroll-to-obuwie-ochronne').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-obuwie-ochronne').offset().top}, 1250)
+    $('html, body').animate({scrollTop: $('.js--section-obuwie-ochronne').offset().top}, 1125)
   });
 
   $('.js--scroll-to-helmy-strazackie').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-helmy-strazackie').offset().top}, 1500)
+    $('html, body').animate({scrollTop: $('.js--section-helmy-strazackie').offset().top}, 1250)
   });
 
   $('.js--scroll-to-kombinezony-ochronne').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-kombinezony-ochronne').offset().top}, 1750)
+    $('html, body').animate({scrollTop: $('.js--section-kombinezony-ochronne').offset().top}, 1375)
   });
 
   $('.js--scroll-to-srodki-chronne').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-srodki-ochronne').offset().top}, 2000)
+    $('html, body').animate({scrollTop: $('.js--section-srodki-ochronne').offset().top}, 1500)
   });
 
+  $('.js--go-to-top').click(function() {
+    // document.body.scrollTop = 0; // For Safari
+    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    $('html, body').animate({scrollTop: $('.js--section-header').offset().top}, 1500)
+ });
   /* Smooth scrolling */
   // Select all links with hashes
   $('a[href*="#"]')
@@ -131,4 +136,26 @@ $(document).ready(function() {
     slides[slideIndex - 1].style.display = "block";
   }
   /* Lightbox Gallery end */
+
+  /* Back to top button start */
+  //Get the button:
+  mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }  
+  /* Back to top button end */
 })
