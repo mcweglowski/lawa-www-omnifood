@@ -1,69 +1,9 @@
 $(document).ready(function() {
 
-  /* Scroll on buttons*/
-  $('.js--scroll-to-sprzet-wojskowy').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-sprzet-wojskowy').offset().top}, 1000)
-  });
-
-  $('.js--scroll-to-obuwie-ochronne').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-obuwie-ochronne').offset().top}, 1125)
-  });
-
-  $('.js--scroll-to-helmy-strazackie').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-helmy-strazackie').offset().top}, 1250)
-  });
-
-  $('.js--scroll-to-kombinezony-ochronne').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-kombinezony-ochronne').offset().top}, 1375)
-  });
-
-  $('.js--scroll-to-srodki-chronne').click(function() {
-    $('html, body').animate({scrollTop: $('.js--section-srodki-ochronne').offset().top}, 1500)
-  });
-
   $('.js--go-to-top').click(function() {
-    // document.body.scrollTop = 0; // For Safari
-    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    $('html, body').animate({scrollTop: $('.js--section-header').offset().top}, 1500)
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
  });
-  /* Smooth scrolling */
-  // Select all links with hashes
-  $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-   }
-  });
-
 
   /* Animations on scroll */
   $('.js--wp-2').waypoint(function(direction) {
@@ -92,6 +32,9 @@ $(document).ready(function() {
 
     mybutton = document.getElementById("myBtn");
     mybutton.style.display = "block";
+
+    // ENABLE: prevent showing "Back to top" button, when user scroll
+    $('html, body').css({overflow: 'auto'});
   })
 
   var slideIndex = 1;
@@ -105,6 +48,9 @@ $(document).ready(function() {
 
       mybutton = document.getElementById("myBtn");
       mybutton.style.display = "none";
+
+    // DISABLE: prevent showing "Back to top" button, when user scroll
+    $('html, body').css({overflow: 'hidden'});
   })
 
   $('.js--lightbox-prev-slide').click(function() {
