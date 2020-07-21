@@ -89,6 +89,9 @@ $(document).ready(function() {
   /* Lightbox Gallery start */
   $('.js--lightbox-close-gallery').click(function() {
     $(this).parent().css("display", "none");
+
+    mybutton = document.getElementById("myBtn");
+    mybutton.style.display = "block";
   })
 
   var slideIndex = 1;
@@ -99,6 +102,9 @@ $(document).ready(function() {
       $(currentGalleryID).css("display", "block");
       slideIndex = 1;
       showSlide(slideIndex);
+
+      mybutton = document.getElementById("myBtn");
+      mybutton.style.display = "none";
   })
 
   $('.js--lightbox-prev-slide').click(function() {
@@ -138,24 +144,17 @@ $(document).ready(function() {
   /* Lightbox Gallery end */
 
   /* Back to top button start */
-  //Get the button:
-  mybutton = document.getElementById("myBtn");
-
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
+    mybutton = document.getElementById("myBtn");
+
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
     }
   }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }  
   /* Back to top button end */
 })
