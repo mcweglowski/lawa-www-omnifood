@@ -132,6 +132,7 @@ ion-icon {
 ,input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
+    margin-bottom: 15px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
@@ -191,6 +192,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.sections-menu {
+    width: 75%;
 }
 
 .logo {
@@ -283,17 +288,6 @@ header {
 /*-----------------------------------*/
 .app-screen {
     width: 40%;
-}
-
-.btn-app:link,
-.btn-app:visited {
-    border: 0px;
-}
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
 }
 
 .box {
@@ -648,7 +642,7 @@ footer p {
     padding: 5%;
 }
 
-#myBtn {
+#backToTopButton {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */

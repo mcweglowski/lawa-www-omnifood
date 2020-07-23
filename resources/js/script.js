@@ -30,7 +30,7 @@ $(document).ready(function() {
   $('.js--lightbox-close-gallery').click(function() {
     $(this).parent().css("display", "none");
 
-    mybutton = document.getElementById("myBtn");
+    mybutton = document.getElementById("backToTopButton");
     mybutton.style.display = "block";
 
     // ENABLE: prevent showing "Back to top" button, when user scroll
@@ -46,7 +46,7 @@ $(document).ready(function() {
       slideIndex = 1;
       showSlide(slideIndex);
 
-      mybutton = document.getElementById("myBtn");
+      mybutton = document.getElementById("backToTopButton");
       mybutton.style.display = "none";
 
     // DISABLE: prevent showing "Back to top" button, when user scroll
@@ -94,7 +94,7 @@ $(document).ready(function() {
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    mybutton = document.getElementById("myBtn");
+    mybutton = document.getElementById("backToTopButton");
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       mybutton.style.display = "block";
