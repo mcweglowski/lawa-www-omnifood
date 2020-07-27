@@ -138,6 +138,7 @@ ion-icon {
     border-radius: 200px;
     color: #fff;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    cursor: pointer;
 }
 
 .btn-full:link,
@@ -388,7 +389,7 @@ cite img {
 /*-----------------------------------*/
 
 .contact-form {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
