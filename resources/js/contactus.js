@@ -37,10 +37,10 @@ function submitToAPI(e) {
       data: JSON.stringify(data),
 
       success: function () {
-        document.getElementById("contact-form").reset();
-        location.reload();
+        document.getElementById("email-success").style.display = "block";
       },
       error: function () {
+        document.getElementById("email-error").style.display = "block";
       }
     });
 }
