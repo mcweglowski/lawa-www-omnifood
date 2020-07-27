@@ -650,3 +650,21 @@ footer p {
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
   }
+
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    color: rgb(22, 22, 22);
+    display: none;
+}
+
+.success {
+    background-color: rgba(38, 191, 68, 0.8);
+}
+
+.error {
+    background-color: rgba(209, 46, 46, 0.8);
+}
