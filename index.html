@@ -537,12 +537,15 @@
                             </row>
                             <div class="row contact-item">
                                 <input type="text" name="name" id="name-input" placeholder="Twoje imię" required>
+                                <label class="validation-message" id="name-input-empty">Imię powinno mieć przynajmniej dwa znaki</label>
                             </div>
                             <div class="row contact-item">
                                 <input type="email" name="email" id="email-input" placeholder="Twój email" required>
+                                <label class="validation-message" id="email-input-empty">Adres email jest niepoprawny</label>
                             </div>
                             <div class="row contact-item">
                                 <textarea name="message" id="description-input" placeholder="Napisz tutaj..."></textarea>
+                                <label class="validation-message" id="description-input-empty">Wiadomość nie może być pusta</label>
                             </div>
                             <div class="row">
                                 <div class="col span-1-of-3">
