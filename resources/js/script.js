@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+  /*Sticky navigation*/
+  $('.js--section-sprzet-wojskowy').waypoint(function(direction) {
+    if (direction == "down") {
+        $('nav').addClass('sticky')
+    }
+    else {
+        $('nav').removeClass('sticky')
+  }}, {
+    offset: '60px'
+  });
+
   $('.js--go-to-top').click(function() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
