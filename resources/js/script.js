@@ -114,4 +114,19 @@ $(document).ready(function() {
     }
   }
   /* Back to top button end */
+
+
+  /* Mobile nav */
+  $('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon ion-icon');
+
+    nav.slideToggle(200)
+
+    if ('menu-outline' == icon.attr('name')) {
+      icon.attr('name', 'close-outline')
+    } else {
+      icon.attr('name', 'menu-outline')
+    }
+  });
 })
