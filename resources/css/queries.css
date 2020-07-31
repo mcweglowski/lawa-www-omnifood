@@ -47,7 +47,9 @@
     section { padding: 90px 0; }
 
     .row,
-    .hero-text-box { padding: 0 4%; }
+    .hero-text-box { 
+        padding: 0 4%; 
+    }
     
     .col { 
         width: 100%;
