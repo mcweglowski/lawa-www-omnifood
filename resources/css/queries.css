@@ -104,9 +104,9 @@
 
     h1 
     { 
-        font-size: 180%;
-        margin-left: 50%;
-        text-align: justify; 
+        font-size: 160%;
+        margin-right: 10%;
+        text-align: left; 
     }
 
     h2 { font-size: 150%; }
