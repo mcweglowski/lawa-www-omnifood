@@ -144,6 +144,6 @@ $(document).ready(function() {
       document.getElementById('js--h1').style.visibility = 'visible';
     }
 
-    // document.getElementById("main-nav").style = "none";
+    document.getElementById("main-nav").style = "none";
   });
 })
