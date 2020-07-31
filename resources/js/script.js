@@ -41,6 +41,8 @@ $(document).ready(function() {
   $('.js--lightbox-close-gallery').click(function() {
     $(this).parent().css("display", "none");
 
+    $('nav').addClass('sticky')
+
     mybutton = document.getElementById("backToTopButton");
     mybutton.style.display = "block";
 
@@ -57,6 +59,7 @@ $(document).ready(function() {
       slideIndex = 1;
       showSlide(slideIndex);
 
+      $('nav').removeClass('sticky')
       mybutton = document.getElementById("backToTopButton");
       mybutton.style.display = "none";
 
