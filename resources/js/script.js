@@ -129,4 +129,8 @@ $(document).ready(function() {
       icon.attr('name', 'menu-outline')
     }
   });
+
+  $('.js--main-nav-item').click(function() {
+    document.getElementById("main-nav").style = "none";
+  });
 })
