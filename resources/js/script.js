@@ -136,15 +136,18 @@ $(document).ready(function() {
   });
 
   $('.js--main-nav-item').click(function() {
-    var nav = $('.js--main-nav');
-    var icon = $('.js--nav-icon ion-icon');
+    var width = $( document ).width();
 
-    if ('menu-outline' == icon.attr('name')) {
-      icon.attr('name', 'close-outline')
-      document.getElementById('js--h1').style.visibility = 'hidden';
-    } else {
-      icon.attr('name', 'menu-outline')
-      document.getElementById('js--h1').style.visibility = 'visible';
+    if (900 >= width) {
+      var icon = $('.js--nav-icon ion-icon');
+
+      if ('menu-outline' == icon.attr('name')) {
+        icon.attr('name', 'close-outline')
+        document.getElementById('js--h1').style.visibility = 'hidden';
+      } else {
+        icon.attr('name', 'menu-outline')
+        document.getElementById('js--h1').style.visibility = 'visible';
+      }
     }
 
     document.getElementById("main-nav").style = "none";
