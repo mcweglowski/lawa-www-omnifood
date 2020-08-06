@@ -189,10 +189,9 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 1140px;    
+    top: 40%;
+    left: 20%;
 }
 
 .sections-menu {
@@ -530,7 +529,7 @@ footer p {
 /*-----------------------------------*/
 /*animations*/
 /*-----------------------------------*/
-.js--wp-1,
+/* .js--wp-1,
 .js--wp-2,
 .js--wp-3 {
     opacity: 0;
@@ -545,7 +544,7 @@ footer p {
 .js--wp-2.animated,
 .js--wp-3.animated {
     opacity: 1;
-}
+} */
 
 
 /* Lightbox */
