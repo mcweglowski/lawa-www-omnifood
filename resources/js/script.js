@@ -16,27 +16,6 @@ $(document).ready(function() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
  });
 
-  /* Animations on scroll */
-  $('.js--wp-2').waypoint(function(direction) {
-    $('.js--wp-2').addClass('animated fadeInUp');
-  }, {
-    offset: '50%'
-  });
-
-  $('.js--wp-3').waypoint(function(direction) {
-    $('.js--wp-3').addClass('animated fadeIn');
-  }, {
-    offset: '50%'
-  });
-
-  $('.js--wp-4').waypoint(function(direction) {
-    $('.js--wp-4').addClass('animated pulse');
-  }, {
-    offset: '50%'
-  });
-
-  
-  
   /* Lightbox Gallery start */
   $('.js--lightbox-close-gallery').click(function() {
     $(this).parent().css("display", "none");
